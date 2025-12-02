@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { DailyInsights, DreamEntry, DreamAnalysis, NightEnergy, SymbolDefinition, ArtStyle } from "../types";
 
-const apiKey = process.env.API_KEY || '';
+const apiKey = process.env.REACT_APP_GEMINI_API_KEY || process.env.API_KEY || '';
 
 const ai = new GoogleGenAI({ apiKey });
 
